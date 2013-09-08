@@ -48,11 +48,11 @@ echo "extension=uploadprogress.so" > /etc/php5/conf.d/uploadprogress.ini
 
 service apache2 restart
 
-echo "===========================================Instalador de drupal==============================================="
+echo "===========================================Instalador de drupal====================================="
 
 cd /srv/www/$1/public_html/ ; drush site-install standard --account-name=admin --account-pass=admin --db-url=mysql://root:maurice@localhost/drupal7 --site-name='Mauricio Alberto'
 
-echo "===========================================Instalando modulos==============================================="
+echo "===========================================Instalando modulos======================================="
 
 cd /srv/www/$1/public_html/ ; drush dl ctools views token pathauto entity entityreference flag
 
